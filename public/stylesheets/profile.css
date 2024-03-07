@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.container {
+  width: 300px;
+  aspect-ratio: 1;
+  /* background-color: red; */
+  box-shadow: inset 0px 0px 15px 0px #00000070;
+  border-radius: 30% 70% 40% 60% / 30% 60% 40% 70%;
+  background: url("https://images.unsplash.com/photo-1616468042205-88ef837b839e?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+
+  /*   This is for this image if your image is good then make
+    background-position: center; */
+  background-position-y: 40%;
+
+  animation: modernEffect 2s ease-in-out infinite alternate;
+}
+
+@keyframes modernEffect {
+  0% {
+    border-radius: 30% 70% 40% 60% / 30% 60% 40% 70%;
+  }
+  100% {
+    border-radius: 70% 30% 60% 40% / 60% 30% 80% 40%;
+  }
+}
