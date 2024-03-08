@@ -9,13 +9,10 @@
   <body>
     <div class="container">
       <div class="content">
-        <!--pinterest logo-->
-        <img
-          src="https://i.pinimg.com/originals/d3/d1/75/d3d175e560ae133f1ed5cd4ec173751a.png"
-          alt="pin logo"
-          class="img1"
-        />
+       
+
         <p class="header">Login Account to see more</p>
+        <p style="color: red; font-size: 1.3vw; line-height: 1vw;" class="header"><%= err %></p>
 <form action="/login" method="post">
 
   <input type="text" name="username" placeholder="username" class="detail" /><br />
@@ -27,7 +24,6 @@
         <a href="/forgot" style="text-decoration: none;">Forgot your password?</a>
 
         <a href="/" style=" margin-top :25px ; text-decoration: none;">Not in pintrest then sign up 😎</a>
-
 
 
         
