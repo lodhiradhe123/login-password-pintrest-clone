@@ -7,6 +7,10 @@ const userSchema = mongoose.Schema({
   email: { type: String, required: true, unique: true },
   password: { type: String },
   fullName: { type: String },
+  posts: {
+    type: Array,
+    default: [],
+  },
 });
 
 userSchema.plugin(plm);

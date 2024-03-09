@@ -15,9 +15,9 @@
   <body>
     <div class="main01">
       <div class="profilecontainer"></div>
-      <h1>@Radheshyam Lodhi</h1>
-      <a>radheshyamlodhi48@gmail.com</a>
-      <a
+      <h1><%= user.username %></h1>
+      <a><%= user.email %> </a>
+      <a href="/logout"
         ><button
           style="
             padding: 0.6vw 1.2vw;
@@ -25,9 +25,19 @@
             background-color: tomato;
           "
         >
-          Account Setiings
+          Log-out
         </button></a
       >
+      <form action="/upload" method="post" enctype="multipart/form-data">
+        <input
+          type="text"
+          name="description"
+          id=""
+          placeholder="add-description"
+        />
+        <input type="file" name="file" id="" />
+        <input type="submit" />
+      </form>
     </div>
     <div class="container" style="">
       <div class="card" style="width: 18rem">
